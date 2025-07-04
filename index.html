@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Tourism</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">Tourism</h1>
+                <p class="paragraph">Plan your trip.</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="sectionFavouritePlaces" style="display:none;">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Favourite Places</h1>
+            
+            <div class="favourite-place-card-container d-flex flex-row justify-content-between" onclick="display('sectionKedarnathDetailedView')">
+                <div class="favourite-place-card-text-container">
+                    <h1 class="favourite-place-card-heading">Kedarnath</h1>
+                    <p class="favourite-place-card-description">
+                        🏔️ Kedarnath is a sacred Hindu pilgrimage site nestled in the Garhwal Himalayas of Uttarakhand, India. 
+                        Home to the revered Kedarnath Temple dedicated to Lord Shiva.
+                    </p>
+                </div>
+                <img src="https://wallpapers.com/images/hd/kedarnath-lord-shiva-silhouette-4k-v6rkq4p0bq8m9810.jpg" 
+                     class="favourite-place-card-image" 
+                     alt="Kedarnath Temple">
+            </div>
+            
+            <div class="favourite-place-card-container d-flex flex-row justify-content-between" onclick="display('sectionBadrinathDetailedView')">
+                <div class="favourite-place-card-text-container">
+                    <h1 class="favourite-place-card-heading">Badrinath</h1>
+                    <p class="favourite-place-card-description">
+                       🕉️ Badrinath is one of the most sacred pilgrimage sites in India, 
+                       located in the Chamoli district of Uttarakhand amidst the majestic Himalayas.
+                    </p>
+                </div>
+                <img src="https://t.eucdn.in/tourism/lg/badrinath-9953735.webp" 
+                     class="favourite-place-card-image" 
+                     alt="Badrinath Temple">
+            </div>
+            
+            <div class="favourite-place-card-container d-flex flex-row justify-content-between" onclick="display('sectionRameswaramDetailedView')">
+                <div class="favourite-place-card-text-container">
+                    <h1 class="favourite-place-card-heading">Rameswaram</h1>
+                    <p class="favourite-place-card-description">
+                        🛕 Ramanathaswamy Temple in Rameswaram, Tamil Nadu, is a sacred Hindu shrine dedicated to 
+                        Lord Shiva and one of the twelve Jyotirlingas.
+                    </p>
+                </div>
+                <img src="https://discoverindiabycar.com/wp-content/uploads/2025/02/Rameshwaram-Temple-003.webp" 
+                     class="favourite-place-card-image" 
+                     alt="Rameswaram Temple">
+            </div>
+            
+            <div class="favourite-place-card-container d-flex flex-row justify-content-between" onclick="display('sectionSomnathTempleDetailedView')">
+                <div class="favourite-place-card-text-container">
+                    <h1 class="favourite-place-card-heading">Somnath Temple</h1>
+                    <p class="favourite-place-card-description">
+                        🕉️ Somnath Temple, located in Prabhas Patan near Veraval in Gujarat, 
+                        is one of the most sacred and ancient Hindu temples dedicated to Lord Shiva.
+                    </p>
+                </div>
+                <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/19/455542bf5b64210ffde80b23e558b869_1000x1000.jpeg" 
+                     class="favourite-place-card-image" 
+                     alt="Somnath Temple">
+            </div>
+            
+            <button class="btn btn-dark back-btn" onclick="display('sectionHome')">
+                Back
+            </button>
+        </div>
+    </div>
+    
+    <div id="sectionKedarnathDetailedView" style="display:none;">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselKedarnath" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselKedarnath" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselKedarnath" data-slide-to="1"></li>
+                        <li data-target="#carouselKedarnath" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.chardham-pilgrimage-tour.com/assets/images/shri-kedarnath-temple_02.webp" 
+                                 class="d-block w-100" 
+                                 alt="Kedarnath Temple view">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/f0/e4/61/kedarnath.jpg" 
+                                 class="d-block w-100" 
+                                 alt="Kedarnath Temple closeup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://media.istockphoto.com/id/1198764648/photo/kedarnath-temple-is-a%C2%A0hindu-temple.jpg?s=612x612&w=0&k=20&c=x-vY4hEl6q1xK1oOc2IsuyGYIzLqKZX3f4ho5UlBaO8=" 
+                                 class="d-block w-100" 
+                                 alt="Kedarnath Temple landscape">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselKedarnath" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselKedarnath" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Kedarnath</h1>
+                    <p class="detailed-view-card-description">
+                        🏔️ <strong>Kedarnath</strong> is a sacred Hindu pilgrimage site nestled in the Garhwal Himalayas of Uttarakhand, India.
+                        Home to the revered Kedarnath Temple dedicated to Lord Shiva, it stands at an altitude of 3,583 meters, 
+                        surrounded by snow-capped peaks and the Mandakini River. The temple, believed to be over a thousand years 
+                        old, is one of the twelve Jyotirlingas and holds immense spiritual significance. Despite its remote location 
+                        and challenging terrain, thousands of devotees undertake the journey each year, drawn by faith and the breathtaking
+                        natural beauty that envelops this holy destination.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark back-btn" onclick="display('sectionFavouritePlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+              
+    <div id="sectionBadrinathDetailedView" style="display:none;">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselBadrinath" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselBadrinath" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselBadrinath" data-slide-to="1"></li>
+                        <li data-target="#carouselBadrinath" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://t.eucdn.in/tourism/md/badrinath-8753188.webp" 
+                                 class="d-block w-100" 
+                                 alt="Badrinath Temple exterior">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.onlineuttarakhand.com/images/badrinath-1.jpg" 
+                                 class="d-block w-100" 
+                                 alt="Badrinath Temple courtyard">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://wallpaperaccess.com/full/6294435.jpg" 
+                                 class="d-block w-100" 
+                                 alt="Badrinath Temple panoramic view">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselBadrinath" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselBadrinath" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Badrinath</h1>
+                    <p class="detailed-view-card-description">
+                        🕉️ <strong>Badrinath</strong> is one of the holiest Hindu pilgrimage sites, located in the Chamoli district of Uttarakhand, India.
+                        Nestled between the Nar and Narayana mountain ranges along the banks of the Alaknanda River, Badrinath is dedicated to Lord Vishnu and is part of both the Char Dham and Chota Char Dham pilgrimage circuits.
+                        The temple, believed to have been established by Adi Shankaracharya in the 8th century, is renowned for its colorful facade and serene surroundings.
+                        Pilgrims visit to seek blessings and to experience the breathtaking natural beauty of the Himalayas, glacial rivers, and alpine meadows that surround this sacred destination.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark back-btn" onclick="display('sectionFavouritePlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+    
+    <div id="sectionRameswaramDetailedView" style="display:none;">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselRameswaram" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselRameswaram" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselRameswaram" data-slide-to="1"></li>
+                        <li data-target="#carouselRameswaram" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://discoverindiabycar.com/wp-content/uploads/2025/02/Rameshwaram-Temple-003.webp" 
+                                 class="d-block w-100" 
+                                 alt="Rameswaram Temple main entrance">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://media.gettyimages.com/id/538000717/photo/pamban-bridge-rameshwaram-tamilnadu-india.jpg?s=612x612&w=0&k=20&c=EC26khOAaUwC9yvT9dUcgcJhAYSiHZGfIoW2uX-1QIE=" 
+                                 class="d-block w-100" 
+                                 alt="Rameswaram Temple corridors">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://media.gettyimages.com/id/1161952439/photo/ramanathaswamy-temple-rameswaram-beach-view-from-arabian-sea.jpg?s=612x612&w=0&k=20&c=zSdBYkRyx_8TmDKlsWapGGii1uPaFK-kKATupFaXVHs=" 
+                                 class="d-block w-100" 
+                                 alt="Rameswaram Temple aerial view">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselRameswaram" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselRameswaram" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Rameswaram</h1>
+                    <p class="detailed-view-card-description">
+                        🛕 <strong>Rameswaram</strong> is a revered pilgrimage town located on Pamban Island in Tamil Nadu, India.
+                        It is home to the famous Ramanathaswamy Temple, dedicated to Lord Shiva, and is one of the Char Dham pilgrimage sites.
+                        According to Hindu mythology, this is where Lord Rama built a bridge to Lanka to rescue Sita, and worshipped Shiva to absolve his sins.
+                        The temple is renowned for its magnificent corridors, intricately carved pillars, and sacred water tanks.
+                        Surrounded by the Bay of Bengal and the Indian Ocean, Rameswaram is not only a spiritual haven but also a place of serene coastal beauty and historical significance.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark back-btn" onclick="display('sectionFavouritePlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+    
+    <div id="sectionSomnathTempleDetailedView" style="display:none;">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselSomnath" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselSomnath" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSomnath" data-slide-to="1"></li>
+                        <li data-target="#carouselSomnath" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/19/455542bf5b64210ffde80b23e558b869_1000x1000.jpeg" 
+                                 class="d-block w-100" 
+                                 alt="Somnath Temple main view">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/originals/3c/ab/00/3cab00100cb29576496c78b2b330c319.jpg" 
+                                 class="d-block w-100" 
+                                 alt="Somnath Temple at sunset">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.artofliving.org/in-en/mahashivratri/app/uploads-shivratri/2023/12/Jyotirlinga-Somnath1-1.jpg" 
+                                 class="d-block w-100" 
+                                 alt="Somnath Temple interior">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselSomnath" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselSomnath" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Somnath Temple</h1>
+                    <p class="detailed-view-card-description">
+                        🕉️ <strong>Somnath Temple</strong>, located in Prabhas Patan near Veraval in Gujarat, is one of the most sacred and ancient Hindu temples dedicated to Lord Shiva.
+                        It is renowned for its stunning architecture, intricate carvings, and historical significance. The temple has been rebuilt several times over the centuries after being destroyed by various invaders.
+                        The current structure, built in the Chalukya style, features a 15-foot high shikhara (spire) and a beautiful courtyard. Somnath Temple is not only a spiritual center but also a symbol of resilience and devotion for millions of devotees who visit it every year.
+                    </p>    
+                </div>
+            </div>
+            <button class="btn btn-dark back-btn" onclick="display('sectionFavouritePlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
